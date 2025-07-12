@@ -45,7 +45,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: shine 3s linear infinite;
+  animation: shine 6s linear infinite;
   text-shadow:
     0 0 5px rgba(255, 255, 255, 0.2),
     0 0 10px rgba(255, 255, 255, 0.1),
