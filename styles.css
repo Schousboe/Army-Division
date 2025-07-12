@@ -1,0 +1,118 @@
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0c1632;
+    font-family: Orbitron;
+    color: #adbac7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+  }
+
+ @keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.metal-text {
+  font-size: 4.3rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+  background: linear-gradient(
+    120deg,
+    #bbbbbb 0%,
+    #eeeeee 20%,
+    #888888 40%,
+    #dddddd 60%,
+    #bbbbbb 80%,
+    #ffffff 100%
+  );
+  background-size: 400% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shine 3s linear infinite;
+  text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.2),
+    0 0 10px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+  .login-container {
+    background: rgba(28, 42, 66, 0.7);
+    border-radius: 12px;
+    padding: 2rem 3rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    width: 320px;
+  }
+
+  .login-container label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    color: #9ab3c1;
+    font-weight: 600;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    background: #37465d;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    color: #b6c5db;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-family: Orbitron;
+  }
+
+  .login-container input::placeholder {
+    color: #7d8aa3;
+  }
+
+  .btn-login {
+    background: #54de86;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    padding: 0.75rem;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.25s ease;
+    font-family: Orbitron;
+  }
+
+  .btn-login:hover {
+    background-color: #45bf74;
+  }
+
+  .login-footer {
+    font-size: 0.85rem;
+    text-align: center;
+    color: #7f8ca3;
+  }
+  .login-footer a {
+    color: #54de86;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 0.3rem;
+  }
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
