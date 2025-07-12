@@ -1,38 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Army Division - Login</title>
-  <link href="style.css" rel="stylesheet">
-  <!-- npx tailwindcss -i ./input.css -o ./style.css --watch -->
-</head>
-<body class="flex items-center justify-center min-h-screen bg-gray-900 text-white">
-  <div class="text-center text-sm mt-6 text-gray-400">
-    <h1 class="text-4xl font-bold text-center tracking-widest mb-6 bg-gradient-to-r from-gray-300 via-white to-gray-300 bg-clip-text text-transparent animate-glimmer">
-      ARMY DIVISION
-    </h1>
-    <div class="w-full max-w-md bg-gray-800 p-8 rounded-xl shadow-xl border border-gray-700">
-      <form class="space-y-4">
-        <div>
-          <label class="block text-gray-300 text-sm mb-1" for="username">Username</label>
-          <input type="text" id="username" placeholder="Your username"
-                 class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded text-white focus:ring-2 focus:ring-green-400 outline-none" />
-        </div>
-        <div>
-          <label class="block text-gray-300 text-sm mb-1" for="password">Password</label>
-          <input type="password" id="password" placeholder="••••••••"
-                 class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded text-white focus:ring-2 focus:ring-green-400 outline-none" />
-        </div>
-        <button type="submit"
-                class="w-full bg-green-400 hover:bg-green-500 text-black font-bold py-2 rounded transition-all">Login</button>
-      </form>
-      <div class="text-center text-sm mt-6 text-gray-400">
-        <p>Don't have an account? <a href="#" class="text-green-400 hover:underline">Register</a></p>
-        <p class="mt-2"><a href="#" class="hover:underline">Forgot password?</a></p>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Army Division Login</title>
+  <link href="styles.css" rel="stylesheet">
+  </head>
+<body>
+
+  <header class="metal-text">Army Division</header>
+
+  <main>
+    <form class="login-container" autocomplete="off">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Your username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="........" required />
+
+      <button type="submit" class="btn-login">Login</button>
+
+      <div class="login-footer">
+        Don't have an account?
+        <a href="#" class="register-link">Register</a>
+        <br />
+        <a href="#" class="forgot-password-link">Forgot password?</a>
       </div>
-    </div>
-  </div>
+    </form>
+  </main>
+
 </body>
 </html>

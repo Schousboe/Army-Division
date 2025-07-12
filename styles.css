@@ -1,6 +1,6 @@
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
-
-body {
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+  /* General page style */
+  body {
     margin: 0;
     padding: 0;
     background: #0c1632;
@@ -12,6 +12,8 @@ body {
     justify-content: start;
     height: 100vh;
   }
+  
+  
 
  @keyframes shine {
   0% {
@@ -50,6 +52,7 @@ body {
     0 0 20px rgba(255, 255, 255, 0.05);
 }
 
+  /* Login container */
   .login-container {
     background: rgba(28, 42, 66, 0.7);
     border-radius: 12px;
@@ -58,6 +61,7 @@ body {
     width: 320px;
   }
 
+  /* Form labels */
   .login-container label {
     display: block;
     font-size: 0.9rem;
@@ -66,6 +70,7 @@ body {
     font-weight: 600;
   }
 
+  /* Input fields */
   .login-container input[type="text"],
   .login-container input[type="password"] {
     background: #37465d;
@@ -83,6 +88,7 @@ body {
     color: #7d8aa3;
   }
 
+  /* Login button */
   .btn-login {
     background: #54de86;
     border: none;
@@ -102,6 +108,7 @@ body {
     background-color: #45bf74;
   }
 
+  /* Links below button */
   .login-footer {
     font-size: 0.85rem;
     text-align: center;
