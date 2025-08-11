@@ -1,3 +1,3 @@
-# Army Division Login Page
+# Army Division game
 
 Under dev
