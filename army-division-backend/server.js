@@ -6,6 +6,10 @@ const jwt = require('jsonwebtoken');
 const app = express();
 app.use(express.json()); 
 
+const cors = require('cors');
+app.use(cors());
+
+
 const users = [];
 
 // REGISTER
