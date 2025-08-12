@@ -1,3 +1,3 @@
-# Army Division game
+# Army Division
 
-Under dev
+Under development, coming soon! 🔥
