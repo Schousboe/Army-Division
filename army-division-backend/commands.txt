@@ -20,6 +20,6 @@ curl -X GET http://localhost:3000/profile \
 
 Make .env file with Github secrets:
 
-echo "JWT_SECRET=$JWT_SECRET" >> .env
-echo "PORT=$PORT" >> .env
+echo "JWT_SECRET=$JWT_SECRET" >> army-division-backend/.env
+echo "PORT=$PORT" >> army-division-backend/.env
 
