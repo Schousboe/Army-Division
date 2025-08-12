@@ -4,9 +4,8 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 const app = express();
-app.use(express.json()); // gør så vi kan læse JSON fra klienten
+app.use(express.json()); 
 
-// Midlertidig "database"
 const users = [];
 
 // REGISTER
@@ -30,13 +29,12 @@ app.post('/login', async (req, res) => {
   const valid = await bcrypt.compare(password, user.password);
   if (!valid) return res.status(400).json({ error: 'Invalid username or password' });
 
-  // Lav JWT token
+  // JWT token
   const token = jwt.sign({ username }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
   res.json({ token });
 });
 
-// BESKYTTET RUTE
 app.get('/profile', (req, res) => {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
