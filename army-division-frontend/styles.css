@@ -72,7 +72,8 @@
 
   /* Input fields */
   .login-container input[type="text"],
-  .login-container input[type="password"] {
+  .login-container input[type="password"],
+  .login-container input[type="email"] {
     background: #37465d;
     border: none;
     border-radius: 5px;
