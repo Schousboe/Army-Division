@@ -28,6 +28,31 @@
       </div>
     </form>
   </main>
+  <script>
+document.querySelector('.login-container').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
 
+  try {
+    const res = await fetch('http://localhost:3000/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, password })
+    });
+    const data = await res.json();
+    if (res.ok) {
+      // Gem token i localStorage og redirect
+      localStorage.setItem('token', data.token);
+      alert('Login successful!');
+      // window.location.href = '/profile.html'; // Tilføj evt. redirect
+    } else {
+      alert(data.error || 'Login failed');
+    }
+  } catch (err) {
+    alert('Network error');
+  }
+});
+</script>
 </body>
 </html>
