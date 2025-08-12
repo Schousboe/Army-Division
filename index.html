@@ -39,7 +39,7 @@
     const password = document.querySelector("#password").value;
 
     try {
-      const res = await fetch("https://turbo-space-invention-q7rj7xvvr4rfjpr-3000.app.github.dev/login", {
+      const res = await fetch("https://potential-orbit-q76qjv65v6j6hj7w.github.dev/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -52,7 +52,7 @@
       if (res.ok) {
         localStorage.setItem("token", data.token);
         alert("Login successful!");
-        // Du kan nu redirecte til en anden side
+        // Du kan nu redirecte til en annan sida
         // window.location.href = "/game.html";
       } else {
         alert(data.error || "Login failed");
