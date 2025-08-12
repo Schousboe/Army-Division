@@ -1,19 +1,19 @@
 Test register: 
 
-curl -X POST http://localhost:3000/register \
+curl -X POST https://turbo-space-invention-q7rj7xvvr4rfjpr-3000.app.github.dev/register \
   -H "Content-Type: application/json" \
   -d '{"username": "Test", "password": "1234"}'
 
 
 Test login:
 
-curl -X POST http://localhost:3000/login \
+curl -X POST https://turbo-space-invention-q7rj7xvvr4rfjpr-3000.app.github.dev/login \
   -H "Content-Type: application/json" \
   -d '{"username": "Test", "password": "1234"}'
 
 Test authorization:
 
-curl -X GET http://localhost:3000/profile \
+curl -X GET https://turbo-space-invention-q7rj7xvvr4rfjpr-3000.app.github.dev/profile \
   -H "Authorization: Bearer <TOKEN>" <-- Take the Token which you got in "Test login" and replace <TOKEN> with it
 
 -----------------------------------------------------------------------------
