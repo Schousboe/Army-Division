@@ -28,39 +28,4 @@
       </div>
     </form>
   </main>
-</body>
-<script>
-  const form = document.querySelector("form");
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const username = document.querySelector("#username").value;
-    const password = document.querySelector("#password").value;
-
-    try {
-      const res = await fetch("https://potential-orbit-q76qjv65v6j6hj7w.github.dev/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ username, password })
-      });
-
-      const data = await res.json();
-
-      if (res.ok) {
-        localStorage.setItem("token", data.token);
-        alert("Login successful!");
-        // Du kan nu redirecte til en annan sida
-        // window.location.href = "/game.html";
-      } else {
-        alert(data.error || "Login failed");
-      }
-    } catch (err) {
-      console.error("Error:", err);
-      alert("Could not connect to server");
-    }
-  });
-</script>
 </html>
